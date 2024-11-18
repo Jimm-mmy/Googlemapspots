@@ -18,26 +18,13 @@
                 { lat: 50.462694, lng: 30.506872, color: "black", name: "Black 3", mgrs: "36U UA 23056 93046" },
                 { lat: 50.448603, lng: 30.482410, color: "black", name: "Black 4", mgrs: "36U UA 21266 91539" },
                 { lat: 50.460683, lng: 30.486151, color: "black", name: "Black 5", mgrs: "36U UA 21577 92872" },
-                { lat: 50.455000, lng: 30.515000, color: "black", name: "Black 6", mgrs: "36U UA 23500 92000" },
-                { lat: 50.450500, lng: 30.510500, color: "black", name: "Black 7", mgrs: "36U UA 23100 91800" },
-                { lat: 50.451200, lng: 30.513200, color: "black", name: "Black 8", mgrs: "36U UA 23250 91900" },
-                { lat: 50.452300, lng: 30.514100, color: "black", name: "Black 9", mgrs: "36U UA 23300 92000" },
-                { lat: 50.453500, lng: 30.515300, color: "black", name: "Black 10", mgrs: "36U UA 23450 92200" },
-                { lat: 50.450700, lng: 30.510700, color: "black", name: "Black 11", mgrs: "36U UA 23120 91820" },
-                { lat: 50.452000, lng: 30.512500, color: "black", name: "Black 12", mgrs: "36U UA 23250 91890" },
-                { lat: 50.451500, lng: 30.514000, color: "black", name: "Black 13", mgrs: "36U UA 23300 91900" },
-                { lat: 50.452200, lng: 30.515100, color: "black", name: "Black 14", mgrs: "36U UA 23350 92000" },
-                { lat: 50.453000, lng: 30.516200, color: "black", name: "Black 15", mgrs: "36U UA 23400 92200" },
-                { lat: 50.450800, lng: 30.510600, color: "black", name: "Black 16", mgrs: "36U UA 23100 91810" },
-                { lat: 50.451900, lng: 30.512800, color: "black", name: "Black 17", mgrs: "36U UA 23250 91880" },
-                { lat: 50.452400, lng: 30.514500, color: "black", name: "Black 18", mgrs: "36U UA 23310 91950" },
-                { lat: 50.453600, lng: 30.515800, color: "black", name: "Black 19", mgrs: "36U UA 23380 92010" },
-                { lat: 50.450900, lng: 30.510900, color: "black", name: "Black 20", mgrs: "36U UA 23150 91850" },
-                { lat: 50.451400, lng: 30.512900, color: "black", name: "Black 21", mgrs: "36U UA 23280 91870" },
-                { lat: 50.452100, lng: 30.514200, color: "black", name: "Black 22", mgrs: "36U UA 23330 91920" },
-                { lat: 50.453100, lng: 30.515600, color: "black", name: "Black 23", mgrs: "36U UA 23390 92050" },
-                { lat: 50.450400, lng: 30.510300, color: "black", name: "Black 24", mgrs: "36U UA 23100 91800" },
-                { lat: 50.451800, lng: 30.512300, color: "black", name: "Black 25", mgrs: "36U UA 23250 91890" }
+                { lat: 50.454050, lng: 30.521420, color: "blue", name: "Blue 1", mgrs: "36U UA 23771 92115" },
+                { lat: 50.451780, lng: 30.514550, color: "blue", name: "Blue 2", mgrs: "36U UA 23378 91880" },
+                { lat: 50.447830, lng: 30.509290, color: "red", name: "Red 1", mgrs: "36U UA 23014 91547" },
+                { lat: 50.448650, lng: 30.518250, color: "red", name: "Red 2", mgrs: "36U UA 23672 91648" },
+                { lat: 50.445890, lng: 30.513850, color: "yellow", name: "Yellow 1", mgrs: "36U UA 23252 91415" },
+                { lat: 50.449720, lng: 30.528740, color: "yellow", name: "Yellow 2", mgrs: "36U UA 24111 91789" }
+                // Add the remaining 80 spots here
             ];
 
             // Add markers to the map
@@ -56,6 +43,7 @@
                     },
                 });
 
+                // Add an info window for each point
                 const infoWindow = new google.maps.InfoWindow({
                     content: `<strong>${spot.name}</strong><br>MGRS: ${spot.mgrs}`,
                 });
